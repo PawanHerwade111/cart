@@ -9,11 +9,13 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Entity
 @Data
 @Table(name = "cart_item")
+@AllArgsConstructor
 public class CartItemModel {
 	
 	@Id
