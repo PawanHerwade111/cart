@@ -1,14 +1,12 @@
 package com.ecom.service.cart.data;
 
+import java.util.List;
+
 import lombok.Data;
 
 @Data
 public class CartData {
-	
 	private String userId;
-	private String productId;
-	private String skuId;
-	private Integer quantity;
-	private Double price;
-
+	private String cartId;
+	private List<CartItemData> cartItemData;
 }
